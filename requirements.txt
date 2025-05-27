@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+matplotlib
+matplotlib-venn
+wordcloud
+nltk
+plotly
+altair
+networkx
+pyvis
+altair-saver
+pycountry
+statsmodels

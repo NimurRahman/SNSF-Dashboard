@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+html, body, [class*="css"] {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F3;  /* Snowbound */
+  color: #2B2B2B;  /* Tricorn Black */
+}
+
+/* Overall App */
+.stApp {
+  background-color: #F5F5F3;
+}
+
+/* Sidebar */
+.stSidebar {
+  background-color: #E4E1DC !important;  /* Drift of Mist */
+  color: #2B2B2B;
+  border-right: 1px solid #CCC;
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+  color: #3B4C59;  /* Gale Force */
+  font-weight: 600;
+}
+
+/* Card / Container Style */
+.card {
+  background-color: #E4E1DC; /* Drift of Mist */
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 2px 12px rgba(59, 76, 89, 0.12);
+  color: #2B2B2B;
+}
+
+/* Chart Containers */
+.stPlotlyChart {
+  border-radius: 12px;
+  background-color: #E4E1DC;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(59, 76, 89, 0.12);
+}
+
+/* Buttons */
+.stButton > button {
+  background-color: #9A5A41; /* Antiquarian Brown */
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border: none;
+}
+
+.stButton > button:hover {
+  background-color: #B36B50;
+}
+
+/* Tables & DataFrames */
+.stDataFrame, .stTable {
+  background-color: #F5F5F3 !important;
+  color: #2B2B2B;
+}
+
+/* Inputs / Sliders / Radios */
+.stRadio, .stSlider, .stSelectbox {
+  color: #2B2B2B;
+}
+
+hr {
+  border-color: #CCC;
+}
