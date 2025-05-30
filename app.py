@@ -38,15 +38,10 @@ elif selection == "Researcher Explorer":
     show_researcher_explorer()
 
 elif selection == "Credits":
-    # Center the Swinburne logo and title using HTML for alignment
-    st.markdown(
-        """
-        <div style='text-align: center; margin-bottom: 20px;'>
-            <img src='data/swinburne_logo.png' width='200'>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    # Center the Swinburne logo using columns
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("data/swinburne_logo.png", width=200)
 
     st.markdown(
         "<h1 style='text-align: center; color: #d90429;'>Project Credits</h1>",
