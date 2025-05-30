@@ -38,15 +38,12 @@ elif selection == "Researcher Explorer":
     show_researcher_explorer()
 
 elif selection == "Credits":
-    # Center the Swinburne logo using columns
-    col1, col2, col3 = st.columns([1, 2, 1])
+    # Use columns to align logo and header side by side
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        st.image("data/swinburne_logo.png", width=100)
     with col2:
-        st.image("data/swinburne_logo.png", width=200)
-
-    st.markdown(
-        "<h1 style='text-align: center; color: #d90429;'>Project Credits</h1>",
-        unsafe_allow_html=True
-    )
+        st.markdown("<h1 style='color: #d90429; margin-top: 20px;'>Project Credits</h1>", unsafe_allow_html=True)
 
     st.markdown("""
     ### Group Members:
