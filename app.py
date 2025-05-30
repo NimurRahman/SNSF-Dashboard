@@ -40,7 +40,7 @@ elif selection == "Researcher Explorer":
 elif selection == "Credits":
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image("data/swinburne_logo.png", width=200)
+        st.image("data/swinburne_logo.png", width=250)
         st.markdown(
             "<h1 style='text-align: center; color: #d90429;'>Project Credits</h1>",
             unsafe_allow_html=True
