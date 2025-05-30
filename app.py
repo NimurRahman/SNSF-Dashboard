@@ -43,8 +43,8 @@ elif selection == "Credits":
     st.markdown(
         """
         <div style='text-align: center;'>
-            <img src='data/swinburne_logo.png' width='250' style='margin-bottom: 20px;'/>
-            <h1 style='color: #d90429;'>👥 Project Credits</h1>
+            <img src='data/swinburne_logo.png' width='200' style='margin-bottom: 20px;'/>
+            <h1 style='color: #d90429;'> Project Credits</h1>
         </div>
         """,
         unsafe_allow_html=True
