@@ -10,7 +10,6 @@ st.set_page_config(page_title="SNSF Research Dashboard", layout="wide")
 
 # === Sidebar Navigation ===
 with st.sidebar:
-    # Swinburne Logo
     st.image("data/swinburne_logo.png", width=200)
     st.markdown("## Navigation")
     selection = st.radio("Go to section:", [
@@ -39,16 +38,13 @@ elif selection == "Researcher Explorer":
     show_researcher_explorer()
 
 elif selection == "Credits":
-    # Credits Page
-    st.markdown(
-        """
-        <div style='text-align: center;'>
-            <img src='data/swinburne_logo.png' width='200' style='margin-bottom: 20px;'/>
-            <h1 style='color: #d90429;'> Project Credits</h1>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("data/swinburne_logo.png", width=200)
+        st.markdown(
+            "<h1 style='text-align: center; color: #d90429;'>Project Credits</h1>",
+            unsafe_allow_html=True
+        )
 
     st.markdown("""
     ### Group Members:
@@ -65,5 +61,5 @@ elif selection == "Credits":
     - Swiss National Science Foundation
 
     ---
-    #### This dashboard is built as part of our COS60011-Technology Design Project (Data Analytics) course project, showcasing collaboration, funding insights, gender diversity, keyword analysis, and researcher exploration using real-world data.
+    #### This dashboard is built as part of our COS60011 - Technology Design Project (Data Analytics) course project, showcasing collaboration, funding insights, gender diversity, keyword analysis, and researcher exploration using real-world data.
     """)
