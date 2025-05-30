@@ -10,14 +10,16 @@ st.set_page_config(page_title="SNSF Research Dashboard", layout="wide")
 
 # === Sidebar Navigation ===
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/6/6b/SNF_Logo_En.png", width=200)
+    # Swinburne Logo
+    st.image("data/swinburne_logo.png", width=200)
     st.markdown("## Navigation")
     selection = st.radio("Go to section:", [
         "Funding Insights",
         "Collaboration Network",
         "Gender Diversity",
         "Keyword Analysis",
-        "Researcher Explorer"
+        "Researcher Explorer",
+        "Credits"
     ])
 
 # === Section Routing ===
@@ -35,3 +37,33 @@ elif selection == "Keyword Analysis":
 
 elif selection == "Researcher Explorer":
     show_researcher_explorer()
+
+elif selection == "Credits":
+    # Credits Page
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='data/swinburne_logo.png' width='250' style='margin-bottom: 20px;'/>
+            <h1 style='color: #d90429;'>👥 Project Credits</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown("""
+    ### Group Members:
+    - **Nimur Rahman** — 105092109
+    - **Md Minhaj Rahman** — 105300501
+    - **Nishandeep Singh** — 105315259
+    - **Rahul Kumar** — 105234040
+
+    ### Faculty Supervisor:
+    - **Dr. Dinh Ngọc Tân**
+
+    ### Acknowledgements:
+    - Swinburne University of Technology
+    - Swiss National Science Foundation
+
+    ---
+    #### This dashboard is built as part of our COS60011-Technology Design Project (Data Analytics) course project, showcasing collaboration, funding insights, gender diversity, keyword analysis, and researcher exploration using real-world data.
+    """)
