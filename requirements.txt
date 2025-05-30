@@ -10,3 +10,4 @@ pycountry
 scikit-learn
 streamlit
 wordcloud
+pyvis
